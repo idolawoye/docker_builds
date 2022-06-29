@@ -16,13 +16,13 @@ RUN apt-get update && apt-get install -y \
  wget
 
 RUN mkdir fastp && \
- mkdir /data && \ 
  cd fastp && \ 
  wget http://opengene.org/fastp/fastp.0.23.1 && \
  mv fastp.0.23.1 fastp && \
  chmod a+x ./fastp && \
+ mkdir /data
  
-ENV PATH="${PATH}:/fastp/fastp"
+ENV PATH="$PATH:/fastp/"
 
 WORKDIR /data
 
