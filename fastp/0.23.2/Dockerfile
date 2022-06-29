@@ -1,8 +1,8 @@
-FROM ubuntu:focal as app
+FROM ubuntu:bionic as app
 
 ARG FASTP_VER="0.23.2"
 
-LABEL base.image="ubuntu:focal"
+LABEL base.image="ubuntu:bionic"
 LABEL dockerfile.version="1"
 LABEL software="Fastp"
 LABEL software.version=$SOFTWARENAME_VER
