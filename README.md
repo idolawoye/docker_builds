@@ -1,2 +1,2 @@
 # docker_builds
-fastp
+This repo contains dockerfiles for bioinfo tools used in processing NGS data
